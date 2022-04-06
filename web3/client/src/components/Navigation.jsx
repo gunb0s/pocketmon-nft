@@ -1,8 +1,9 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-const LogIn = styled.div`
+const Elem = styled.div`
   color: rgba(255, 255, 255, 0.55);
   padding-right: 0.5rem;
   padding-left: 0.5rem;
@@ -17,9 +18,13 @@ const Navigation = () => {
       <Container>
         <Navbar.Brand>Minting</Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/list">NFTList</Nav.Link>
-          <LogIn onClick={() => console.log("hi")}>Login</LogIn>
+          <Link to="/">
+            <Elem>Home</Elem>
+          </Link>
+          <Link to="/list">
+            <Elem>NFTList</Elem>
+          </Link>
+          <Elem onClick={() => console.log("hi")}>Login</Elem>
         </Nav>
       </Container>
     </Navbar>
