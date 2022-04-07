@@ -22,15 +22,13 @@ const Background = styled.div`
 
 const Home = () => {
   return (
-    <>
-      <Main>
-        <Navigation />
-        <Section>
-          <Background />
-          <MintCard />
-        </Section>
-      </Main>
-    </>
+    <Main>
+      <Navigation />
+      <Section>
+        <Background />
+        <MintCard />
+      </Section>
+    </Main>
   );
 };
 

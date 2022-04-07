@@ -58,7 +58,7 @@ const MintCard = () => {
       <Card>
         <Mascot />
         <h5>Minting Pocketmons</h5>
-        <p>wating for master..</p>
+        <p>Waiting for trainer</p>
         <Button>Mint</Button>
       </Card>
     </Mint>
