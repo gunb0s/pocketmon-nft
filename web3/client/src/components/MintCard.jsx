@@ -52,12 +52,13 @@ const Button = styled.button`
   }
 `;
 
-const MintCard = () => {
+const MintCard = ({ supply }) => {
   return (
     <Mint>
       <Card>
         <Mascot />
         <h5>Minting Pocketmons</h5>
+        <p>{`${257 - supply} Pocketmon`}</p>
         <p>Waiting for trainer</p>
         <Button>Mint</Button>
       </Card>

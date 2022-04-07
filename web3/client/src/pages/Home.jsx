@@ -20,13 +20,13 @@ const Background = styled.div`
   height: 100%;
 `;
 
-const Home = () => {
+const Home = ({ supply }) => {
   return (
     <Main>
       <Navigation />
       <Section>
         <Background />
-        <MintCard />
+        <MintCard supply={supply} />
       </Section>
     </Main>
   );
