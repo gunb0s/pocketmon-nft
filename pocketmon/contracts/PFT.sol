@@ -1558,6 +1558,7 @@ contract Ownable {
 }
 
 contract PFT is KIP17Full, Ownable {
+    using SafeMath for uint256;
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
